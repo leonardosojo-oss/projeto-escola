@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Antonio de Moraes Barros</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-500/30">
+                    <i class="fa-solid fa-graduation-cap text-xl"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-slate-900">Escola Antonio de Moraes Barros</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#cursos" class="hover:text-brand-600 transition">Cursos</a>
+                <a href="#estrutura" class="hover:text-brand-600 transition">Estrutura</a>
+                <a href="#Endereço" class="hover:text-brand-600 transition">Endereço</a>
+            </nav>
+            <div>
+                <a href="#info-section" id="btn-header-reveal" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition duration-200">
+                    Confira
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-b from-brand-50/50 via-white to-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-700 font-semibold text-sm">
+                        <i class="fa-solid fa-sparkles"></i> Educação do Futuro
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                        Construindo o seu <span class="text-brand-600">amanhã</span> hoje.
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        Ambiente inovador, professores qualificados e uma metodologia moderna pensada no desenvolvimento completo de cada aluno.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button id="btn-hero-reveal" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-brand-600/25 transition duration-200 flex items-center justify-center gap-3">
+                            <span>Confira</span>
+                            <i class="fa-solid fa-arrow-down animate-bounce"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-brand-500 to-emerald-400 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+                    <div class="relative">
+
+                        <div class="absolute -inset-4 bg-gradient-to-r from-brand-500 to-cyan-400 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+                        <img src="images.jpeg" alt="Fachada do Colégio Estadual Antonio de Moraes Barros" class="relative rounded-3xl shadow-2xl w-full object-cover border border-white/40" onerror="this.src='https://placehold.co/600x450/e2e8f0/475569?text=Escola'">
+                     </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-section" class="py-24 bg-white hidden transition-all duration-500 opacity-0 transform translate-y-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-4">Informações da Escola</h2>
+                <p class="text-lg text-slate-600">Conheça tudo o que preparamos para garantir excelência acadêmica e bem-estar.</p>
+                
+           
+                <div class="flex flex-wrap justify-center gap-3 mt-8">
+                    <button id="btn-cursos" data-tab="cursos" class="tab-btn px-6 py-3 rounded-xl font-semibold bg-brand-600 text-white shadow-md transition">Cursos</button>
+                    <button id="btn-estrutura" data-tab="estrutura" class="tab-btn px-6 py-3 rounded-xl font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Estrutura</button>
+                    <button id="btn-depoimentos" data-tab="depoimentos" class="tab-btn px-6 py-3 rounded-xl font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Endereço</button>
+                </div>
+            </div>
+
+         
+            <div id="tab-cursos" class="tab-content grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Educação Infantil</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Ambiente lúdico e seguro para estimular a criatividade, socialização e descobertas iniciais das crianças.</p>
+                    <span class="text-brand-600 font-semibold flex items-center gap-2">Integral e Parcial <i class="fa-solid fa-arrow-right text-sm"></i></span>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Ensino Fundamental</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Foco no pensamento crítico, autonomia nos estudos e consolidação sólida dos conceitos científicos e humanos.</p>
+                    <span class="text-brand-600 font-semibold flex items-center gap-2">Anos Iniciais e Finais <i class="fa-solid fa-arrow-right text-sm"></i></span>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Ensino Médio & Técnico</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Preparação de alto nível para os vestibulares mais concorridos e inserção qualificada no mercado de trabalho.</p>
+                    <span class="text-brand-600 font-semibold flex items-center gap-2">Itinerários Formativos <i class="fa-solid fa-arrow-right text-sm"></i></span>
+                </div>
+            </div>
+
+            <!-- Tab Content: Estrutura -->
+            <div id="tab-estrutura" class="tab-content hidden grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Laboratórios Modernos</h3>
+                    <p class="text-slate-600 leading-relaxed">Espaços totalmente equipados para aulas práticas de Física, Química, Biologia e Robótica.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Complexo Esportivo</h3>
+                    <p class="text-slate-600 leading-relaxed">Quadras poliesportivas cobertas, campo de futebol society e piscina semiolímpica aquecida.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Biblioteca Digital</h3>
+                    <p class="text-slate-600 leading-relaxed">Acervo físico rico e acesso completo a plataformas de leitura digital e computadores de última geração.</p>
+                </div>
+            </div>
+
+            <!-- Tab Content: Depoimentos -->
+            <div id="tab-depoimentos" class="tab-content hidden grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm">
+                    <div class="flex items-center gap-4 mb-4 text-amber-400">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"Endereço: R. Serra do Roncador, 574 - Bandeirantes, Londrina - PR, 86065-590
+                        Telefone: (43) 3327-5969
+                        Horário de funcionamento: 
+                        Fecha em breve · 12:30 ⋅ Reabre às 13:30
+                        "</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center font-bold text-slate-700">AD</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">ADM</h4>
+                            <span class="text-sm text-slate-500">Desenvolvedor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-sm">
+                    <div class="flex items-center gap-4 mb-4 text-amber-400">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"Consegui aprovação em Engenharia graças à base sólida que recebi no Ensino Médio da escola. Sou muito grato a toda equipe!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center font-bold text-slate-700">AD</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">ADM</h4>
+                            <span class="text-sm text-slate-500">Desenvolvedor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between items-center">
+            <div class="flex items-center justify-center sm:justify-start gap-3 mb-4 sm:mb-0">
+                <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-graduation-cap text-sm"></i>
+                </div>
+                <span class="text-xl font-bold text-white tracking-tight">Escola</span>
+            </div>
+            <p class="text-sm">© 2026 Escola. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
